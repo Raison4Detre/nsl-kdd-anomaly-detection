@@ -1,0 +1,54 @@
+{
+  "n_train": 125973,
+  "n_test": 22544,
+  "n_features_raw": 41,
+  "n_features_processed": 126,
+  "anomaly_share_train": 0.4654171925730117,
+  "anomaly_share_test": 0.5692423704755145,
+  "best_model": "K-Means",
+  "metrics": [
+    {
+      "model": "Isolation Forest",
+      "precision": 0.968,
+      "recall": 0.7435,
+      "f1": 0.841,
+      "roc_auc": 0.9469,
+      "pr_auc": 0.959,
+      "train_sec": 1.0594
+    },
+    {
+      "model": "LOF",
+      "precision": 0.8669,
+      "recall": 0.8417,
+      "f1": 0.8541,
+      "roc_auc": 0.8707,
+      "pr_auc": 0.8388,
+      "train_sec": 3.304
+    },
+    {
+      "model": "One-Class SVM",
+      "precision": 0.922,
+      "recall": 0.8771,
+      "f1": 0.899,
+      "roc_auc": 0.9337,
+      "pr_auc": 0.9354,
+      "train_sec": 0.8733
+    },
+    {
+      "model": "K-Means",
+      "precision": 0.9144,
+      "recall": 0.8915,
+      "f1": 0.9028,
+      "roc_auc": 0.9473,
+      "pr_auc": 0.9434,
+      "train_sec": 2.6103
+    }
+  ],
+  "top_corr_features": [
+    "same_srv_rate",
+    "dst_host_srv_count",
+    "dst_host_same_srv_rate",
+    "dst_host_serror_rate",
+    "serror_rate"
+  ]
+}
